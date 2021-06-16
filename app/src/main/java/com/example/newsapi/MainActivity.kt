@@ -2,6 +2,7 @@ package com.example.newsapi
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View.GONE
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.newsapi.adapter.RecyclerViewAdapter
@@ -22,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.errorMessage().observe(this, { error ->
         })
         viewModel.newsList().observe(this, { newsList ->
+            binding.textView.visibility = GONE
             binding.recyclerView.layoutManager = GridLayoutManager(this, 1);
             binding.recyclerView.adapter = RecyclerViewAdapter(newsList)
         })
