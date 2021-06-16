@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.getNews()
 
         viewModel.errorMessage().observe(this, { error ->
+            binding.textView.text = "Error : $error "
         })
         viewModel.newsList().observe(this, { newsList ->
             binding.textView.visibility = GONE
