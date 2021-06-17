@@ -1,1 +1,3 @@
 # NewsApi
+
+By Phatnithi Skonthawat
