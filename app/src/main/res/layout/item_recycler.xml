@@ -12,10 +12,10 @@
     <androidx.cardview.widget.CardView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:elevation="10dp"
-        app:cardCornerRadius="10dp"
-        android:layout_margin="10dp"
-        android:layout_marginBottom="8dp"
+        android:elevation="@dimen/small_10dp"
+        app:cardCornerRadius="@dimen/small_10dp"
+        android:layout_margin="@dimen/small_10dp"
+        android:layout_marginBottom="@dimen/small_10dp"
         android:background="@drawable/round_box_">
 
     <LinearLayout
@@ -37,7 +37,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_margin="10dp"
+            android:layout_margin="@dimen/small_10dp"
             android:text="@{newsDetail.title}"
             android:textColor="@color/black"
             android:textSize="18sp"
@@ -49,7 +49,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:paddingBottom="5dp"
-            android:layout_margin="10dp">
+            android:layout_margin="@dimen/small_10dp">
 
             <TextView
                 android:id="@+id/author"
